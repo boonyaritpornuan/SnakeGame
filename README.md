@@ -1,4 +1,5 @@
 # Snake Game
+<a href="https://ibb.co/FKgbTJ5"><img src="https://i.ibb.co/zrGhvbX/Snake-1-0.jpg" alt="Snake-1-0" border="0"></a>
 
 This is a simple Snake Game implemented in Java. The game allows the player to control a snake to eat food and grow in length while avoiding collisions with the walls or the snake's own body.
 
