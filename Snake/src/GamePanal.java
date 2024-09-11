@@ -3,13 +3,16 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.io.File;
 
 import javax.swing.*;
 import java.util.Random;
+
 
 public class GamePanal extends JPanel implements ActionListener{
 	
@@ -28,15 +31,26 @@ public class GamePanal extends JPanel implements ActionListener{
 	boolean running = false;
 	Timer timer;
 	Random random;
-	
+	Image backgroundImage; 
 	
 	
 	GamePanal(){
 		random = new Random();
 		this.setPreferredSize(new Dimension(SCREEN_WIDTH,SCREEN_HIGHT));
-		this.setBackground(Color.black);
+	//	this.setBackground(Color.black);
 		this.setFocusable(true);
 		this.addKeyListener(new MyKeyAdapter());
+		
+        // โหลดรูปภาพพื้นหลัง
+		File file = new File("src/image/bg1.jpg");
+		if (file.exists()) {
+		    backgroundImage = new ImageIcon(file.getAbsolutePath()).getImage();
+		    System.out.println("Image loaded successfully!");
+		} else {
+		    System.out.println("Image not found!");
+		}
+
+  
 		startGame();
 		
 		
@@ -50,8 +64,10 @@ public class GamePanal extends JPanel implements ActionListener{
 	}
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		draw(g);
 		
+		 // วาดรูปภาพพื้นหลัง
+        g.drawImage(backgroundImage, 0, 0, this.getWidth(), this.getHeight(), this);
+        draw(g);
 	}
 	public void draw(Graphics g) {
 		if(running) {
@@ -167,6 +183,8 @@ public class GamePanal extends JPanel implements ActionListener{
 		}
 		repaint();
 	}
+	
+
 	
 	public class MyKeyAdapter extends KeyAdapter{
 		@Override
