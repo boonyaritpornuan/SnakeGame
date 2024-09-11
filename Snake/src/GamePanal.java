@@ -71,7 +71,7 @@ public class GamePanal extends JPanel implements ActionListener{
 				}
 				else {
 					g.setColor(new Color(45,100,0));
-					g.setColor(new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255)));
+					//g.setColor(new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255)));
 					g.fillRect(x[i],y[i],UNIT_SIZE,UNIT_SIZE);
 				}
 			}
