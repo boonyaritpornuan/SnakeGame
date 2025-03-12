@@ -3,7 +3,16 @@
 
 This is a simple Snake Game implemented in Java. The game allows the player to control a snake to eat food and grow in length while avoiding collisions with the walls or the snake's own body.
 
-เกมงูที่พัฒนาโดยใช้ภาษา Java เกมนี้ให้ผู้เล่นควบคุมงูเพื่อกินอาหารและยาวขึ้น โดยต้องหลีกเลี่ยงการชนกับกำแพงหรือร่างกายของงูเอง
+เกมงูที่พัฒนาโดยใช้ภาษา Java เกมนี้ให้ผู้เล่นควบคุมงูเพื่อกินอาหารและยาวขึ้นหลีกเลี่ยงการชนกับกำแพงหรือร่างกายของงูเอง
+
+## Table of Contents
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [How to Play](#how-to-play)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
 ## Features
 
@@ -29,7 +38,7 @@ This is a simple Snake Game implemented in Java. The game allows the player to c
 
 - Java Development Kit (JDK) 8 ขึ้นไป
 
-### Installation
+## Installation
 
 1. Clone the repository:
     ```sh
@@ -87,7 +96,7 @@ Contributions are welcome! Please fork this repository and submit a pull request
 
 ## การมีส่วนร่วม
 
-ยินดีรับการมีส่วนร่วม! โปรด fork repository นี้และส่ง pull request สำหรับการปรับปรุงหรือแก้ไขข้อบกพร่องใด ๆ
+ยินดีรับการมีส่วนร่วม! โปรด fork repository นี้และส่ง pull request สำหรับการปรับปรุงหรือข้อผิดพลาดใด ๆ
 
 ## License
 
